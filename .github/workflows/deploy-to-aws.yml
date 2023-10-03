@@ -24,4 +24,4 @@ jobs:
         chmod 600 key.pem
     - name: Pull Docker image
       run: |
-        ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@your-ec2-instance-ip 'sudo docker pull tukilla/pythonapp'
+        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@51.20.72.32 'sudo docker pull tukilla/pythonapp'
