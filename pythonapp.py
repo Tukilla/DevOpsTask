@@ -1,3 +1,3 @@
 # Print out text
 
-print ('Hello Devops!')
+print ('Hello Devops, majku ti tvoju!')
