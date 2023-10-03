@@ -21,7 +21,7 @@ jobs:
         
     - name: Set permissions for private key
       run: |
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
+        echo "${{ secrets.DJOKICA }}" > key.pem
         chmod 600 key.pem
         
     - name: Pull Docker image
