@@ -21,11 +21,5 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t your-dockerhub-username/your-image-name .
-          docker push your-dockerhub-username/your-image-name
-        env:
-          DOCKER_BUILDKIT: 1
-        env:
-          DOCKER_CLI_ACI: 1
-        env:
-          DOCKER_CLI_ARCH: arm64
+          docker build -t tukilla/pythonapp .
+          docker push tukilla/pythonapp
