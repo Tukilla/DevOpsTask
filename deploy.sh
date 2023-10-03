@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pull the latest Docker image from Docker Hub
-docker pull tukilla/pythonapp:latest
+docker pull tukilla/pythonapp
 
 # Stop and remove any existing containers
 docker stop pythonapp
