@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: Sleep for 30 seconds
-      run: Start-Sleep -s 30
+      run: sleep 30s
       shell: bash
       
     - name: Checkout code
