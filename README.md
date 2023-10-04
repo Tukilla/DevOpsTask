@@ -1,19 +1,13 @@
 # DevOpsTask
 
-This is a simple python app runing flask framework that shows Hello, Devops! on url.
-It is configured firstly to build and push Dockerfile to Docker Hub using Github Actions and upon any push changes, deploys to aws instance and start flask on port 5000. Port 80 is translated to 5000 dockerized image.
-So any changes on name for example will build new Dockerfile, push to Docker Hub and after push it on AWS instance
+This is a simple Python app flask-app/pythonapp.py running in Flask framework that shows Hello, Devops! on a url on a AWS EC2 instance. 
 
+Upon any push changes, the Github Actions will be triggered and first it will build the image via Dockerfile in the repo and then it will push it to the Docker Hub .github/workflows/build-and-push-docker.yml using login credentials from GitHub Secrets environment. Then the deploy to AWS instance will be triggered and it will also start the container on port 80. Port 80 is mapped to port 5000 inside the running container. 
+So any changes in a code for example will build new image, push that image to Docker Hub and after that it will deploy it on AWS instance.
 
 Setup
 
-Prerequisites on the server: Docker, python3, flask
-
-Python3 is usually installed on Ubuntu server but if it isn’t:
-Check if python is installed: python3 –-version
-If not :  sudo apt install python3; sudo apt-get python3-pip
-
-Install flask: pip3 install flask --user
+Prerequisites on the server: Docker
 
 Install Docker:
 
