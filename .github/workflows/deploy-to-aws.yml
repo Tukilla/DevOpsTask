@@ -30,7 +30,7 @@ jobs:
 
     - name: Stop Docker container
       run: |
-        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker stop --name myapp'
+        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker stop myapp'
         
     - name: Run Docker container
       run: |
