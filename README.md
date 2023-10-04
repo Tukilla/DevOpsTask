@@ -15,6 +15,8 @@ If not :  sudo apt install python3; sudo apt-get python3-pip
 
 Install flask: pip3 install flask --user
 
+Install Docker:
+
 Update the package index on your Ubuntu server: 
 1. sudo apt update
 2. sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
