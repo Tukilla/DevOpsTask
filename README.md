@@ -2,8 +2,7 @@
 
 This is a simple Python app flask-app/pythonapp.py running in Flask framework that shows Hello, Devops! on a url on a AWS EC2 instance. 
 
-Upon any push changes, the Github Actions will be triggered and first it will build the image via Dockerfile in the repo and then it will push it to the Docker Hub .github/workflows/build-and-push-docker.yml using login credentials from GitHub Secrets environment. Then the deploy to AWS instance will be triggered and it will also start the container on port 80. Port 80 is mapped to port 5000 inside the running container. 
-So any changes in a code for example will build new image, push that image to Docker Hub and after that it will deploy it on AWS instance.
+Upon any push changes, the Github Actions will be triggered and first it will build the image via Dockerfile in the repo and then it will push it to the Docker Hub .github/workflows/build-and-push-docker.yml using login credentials from GitHub Secrets environment. Then the deploy to AWS instance will be triggered .github/workflows/deploy-to-aws.yml and it will also start the container on port 80. Port 80 is mapped to port 5000 inside the running container. So any changes in a code for example will build new image, push that image to Docker Hub and after that it will deploy it on AWS instance.
 
 Setup
 
