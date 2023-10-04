@@ -30,4 +30,4 @@ jobs:
         
     - name: Run Docker container
       run: |
-        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker run -d --rm --name myapp -P 80:5000 tukilla/pythonapp'
+        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker run -d --rm --name myapp -p 80:5000 tukilla/pythonapp'
