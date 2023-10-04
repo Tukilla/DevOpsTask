@@ -23,4 +23,3 @@ jobs:
         run: |
           docker build -t tukilla/pythonapp .
           docker push tukilla/pythonapp
-          working-directory: $GITHUB_WORKSPACE/flask-app
