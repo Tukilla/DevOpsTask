@@ -33,7 +33,7 @@ In order for this to work in your environment, you must first setup secrets and 
 
 secrets.DOCKERHUB_USERNAME -> Docker Hub username
 
-secrets.DOCKERHUB_PASSWORD -> -> Docker Hub password
+secrets.DOCKERHUB_PASSWORD -> Docker Hub password
 
 secrets.CLOUD_SSH_KEY -> ssh-keygen on the remote server (usually located in /home/user/.ssh folder) and cat id_rsa or however you named the key and paste it in secrets
 
