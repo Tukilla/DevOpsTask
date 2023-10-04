@@ -27,6 +27,10 @@ jobs:
     - name: Pull Docker image
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker pull tukilla/pythonapp'
+
+    - name: Stop Docker container
+      run: |
+        ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.SERVER_IP }} 'sudo docker stop --name myapp'
         
     - name: Run Docker container
       run: |
